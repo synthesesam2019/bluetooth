@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		
+		
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.239752060">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.239752060" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}-debug" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.239752060" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${ProjName}.bin&quot; &amp;&amp; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot; &amp;&amp; make ldclean" preannouncebuildStep="Creating makefile.defs:" prebuildStep="echo &quot;export PREPROC_CMD = ${openstm32_compiler_path}/${compiler_prefix}cpp -E -P&quot; &gt; ${ProjDirPath}/makefile.defs">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.239752060." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.219790967" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.653060557" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F746NGHx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.366577147" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F746G-DISCO" valueType="string"/>
+							
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.117172302" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv5-sp-d16" valueType="enumerated"/>
+							
+							
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.070009137" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.softfp" valueType="enumerated"/>
+							
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.451288931" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/DISCO-F746NG_blink_led}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.409611487" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.900156448" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.963839764" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.more" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.710769872" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								
+								<option id="gnu.c.compiler.option.include.paths.016039445" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									
+									<listOptionValue builtIn="false" value="&quot;../&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;..//usr/src/mbed-sdk&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+									
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.704452359" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									
+									<listOptionValue builtIn="false" value="TARGET_STM32F746xG"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM32F746NG"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_EMAC=1"/>
+									
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_I2CSLAVE=1"/>
+									
+									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_PORTOUT=1"/>
+									
+									<listOptionValue builtIn="false" value="USBHOST_OTHER"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_PORTINOUT=1"/>
+									
+									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_DISCO_F746NG"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM32F7"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_I2C_ASYNCH=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_ASYNCH=1"/>
+									
+									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
+									
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_CAN=1"/>
+									
+									<listOptionValue builtIn="false" value="ARM_MATH_CM7"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_LIKE_CORTEX_M7"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_RTC=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGOUT=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_M7"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SPI_ASYNCH=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_LPTICKER=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_PWMOUT=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_INTERRUPTIN=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_CORTEX"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_I2C=1"/>
+									
+									<listOptionValue builtIn="false" value="TRANSACTION_QUEUE_SIZE_SPI=2"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_STDIO_MESSAGES=1"/>
+									
+									<listOptionValue builtIn="false" value="__CORTEX_M7"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM32F746"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_FAMILY_STM32"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_FF_ARDUINO"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_RELEASE"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_NAME=DISCO_F746NG"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_USTICKER=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_TRNG=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_RTOS_M4_M7"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
+									
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SPI=1"/>
+									
+									<listOptionValue builtIn="false" value="USB_STM_HAL"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SPISLAVE=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGIN=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL=1"/>
+									
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1558017347.8"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_FLASH=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_QSPI=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM_EMAC"/>
+									
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									
+								</option>
+								
+								<option id="gnu.c.compiler.option.include.files.205460692" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/mbed_config.h"/>
+								</option>
+								
+								
+								
+								<option id="gnu.c.compiler.option.dialect.std.624944115" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.gnu99" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.814238781" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
+								
+								
+								
+								
+								
+																
+								
+								
+								
+								<option id="gnu.c.compiler.option.warnings.extrawarn.755158134" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.877757473" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.942523080" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								<option id="gnu.c.compiler.option.optimization.flags.886197827" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value=" -funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer -fmessage-length=0 -fno-builtin" valueType="string"/>
+								
+								
+								<option id="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other.936499705" name="Other flags" superClass="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="  -Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+								
+								
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.217692574" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.767370940" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.954859193" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.731758938" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.033652265" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								
+								<option id="gnu.cpp.compiler.option.include.paths.431689703" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									
+									<listOptionValue builtIn="false" value="&quot;../&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;..//usr/src/mbed-sdk&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+									
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.267128512" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								
+									<listOptionValue builtIn="false" value="TARGET_STM32F746xG"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM32F746NG"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_EMAC=1"/>
+								
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_I2CSLAVE=1"/>
+								
+									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_PORTOUT=1"/>
+								
+									<listOptionValue builtIn="false" value="USBHOST_OTHER"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_PORTINOUT=1"/>
+								
+									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_DISCO_F746NG"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM32F7"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_I2C_ASYNCH=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_ASYNCH=1"/>
+								
+									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
+								
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_CAN=1"/>
+								
+									<listOptionValue builtIn="false" value="ARM_MATH_CM7"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_LIKE_CORTEX_M7"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_RTC=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGOUT=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_M7"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SPI_ASYNCH=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_LPTICKER=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_PWMOUT=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_INTERRUPTIN=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_CORTEX"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_I2C=1"/>
+								
+									<listOptionValue builtIn="false" value="TRANSACTION_QUEUE_SIZE_SPI=2"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_STDIO_MESSAGES=1"/>
+								
+									<listOptionValue builtIn="false" value="__CORTEX_M7"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM32F746"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_FAMILY_STM32"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_FF_ARDUINO"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_RELEASE"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_NAME=DISCO_F746NG"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_USTICKER=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_TRNG=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_RTOS_M4_M7"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
+								
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SPI=1"/>
+								
+									<listOptionValue builtIn="false" value="USB_STM_HAL"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SPISLAVE=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGIN=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL=1"/>
+								
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1558017347.8"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_FLASH=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_QSPI=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM_EMAC"/>
+								
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+								
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+								
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+								
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+								
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								
+								</option>
+								
+								<option id="gnu.cpp.compiler.option.include.files.754688223" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/mbed_config.h"/>
+								</option>
+								
+								
+								
+								<option id="gnu.cpp.compiler.option.dialect.std.488139782" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.gnu99" valueType="enumerated"/>
+								
+								
+								
+								
+								
+								
+								
+								
+								<option id="gnu.cpp.compiler.option.warnings.allwarn.936060855" superClass="gnu.cpp.compiler.option.warnings.allwarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.866445634" superClass="gnu.cpp.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+															
+								
+								
+								
+								
+								
+								
+								
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.fdata.458702841" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.787052375" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								<option id="gnu.cpp.compiler.option.optimization.flags.950203749" superClass="gnu.cpp.compiler.option.optimization.flags" useByScannerDiscovery="false" value=" -funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer -fmessage-length=0 -fno-builtin" valueType="string"/>
+								
+								
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.587435096" name="Other flags" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" useByScannerDiscovery="false" value=" -Wvla -Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+								
+								
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.738645828" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.626174304" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.241836117" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script.167183525" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script" value="${ProjDirPath}/Debug/linker-script-debug.ld" valueType="string"/>
+								
+								<option id="gnu.cpp.link.option.flags.466907465" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-Wl,--wrap=main -Wl,--wrap=_malloc_r -Wl,--wrap=_free_r -Wl,--wrap=_realloc_r -Wl,--wrap=_memalign_r -Wl,--wrap=_calloc_r -Wl,--wrap=exit -Wl,--wrap=atexit -DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1 -Wl,-n -Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group" valueType="string"/>
+								
+								<option id="gnu.cpp.link.option.userobjs.449962941" name="Other objects" superClass="gnu.cpp.link.option.userobjs" valueType="userObjs">
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/PeripheralPins.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/analogin_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/analogin_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/analogout_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/analogout_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/can_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/flash_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/gpio_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/gpio_irq_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/gpio_irq_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/hal_tick_overrides.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/i2c_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/lp_ticker.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_board.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_crc_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_overrides.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_retarget.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_tz_context.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/pinmap.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/port_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/pwmout_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/pwmout_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/qspi_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/rtc_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/serial_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/serial_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/sleep.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/spi_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/startup_stm32f746xx.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_adc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_adc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_can.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_can_legacy.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_cec.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_cortex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_crc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_crc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_cryp.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_cryp_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dac.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dac_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dcmi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dcmi_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dfsdm.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dma.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dma2d.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dma_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dsi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_eth.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_flash.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_flash_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_gpio.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_hash.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_hash_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_hcd.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_i2c.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_i2c_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_i2s.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_irda.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_iwdg.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_jpeg.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_lptim.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_ltdc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_ltdc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_mdios.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_mmc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_nand.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_nor.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_pcd.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_pcd_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_pwr.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_pwr_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_qspi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rcc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rcc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rng.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rtc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rtc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sai.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sai_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sd.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sdram.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_smartcard.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_smartcard_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_smbus.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_spdifrx.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_spi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_spi_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sram.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_tim.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_tim_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_uart.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_usart.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_wwdg.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_adc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_crc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_dac.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_dma.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_dma2d.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_exti.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_fmc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_gpio.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_i2c.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_lptim.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_pwr.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_rcc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_rng.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_rtc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_sdmmc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_spi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_tim.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_usart.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_usb.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_utils.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm_spi_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/system_clock.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/system_stm32f7xx.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/trng_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/us_ticker.o}&quot;"/>
+									
+								</option>
+								<option id="gnu.cpp.link.option.libs.651254959" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									
+									<listOptionValue builtIn="false" value="mbed"/>
+									
+								</option>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.105206610" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<option id="gnu.cpp.link.option.paths.506091758" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM}&quot;"/>
+									
+								</option>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.014231062" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.949069460" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.085376194" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									
+									<listOptionValue builtIn="false" value="&quot;../&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;..//usr/src/mbed-sdk&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+									
+								</option>
+								
+								<option id="gnu.both.asm.option.flags.463448736" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value=" --defsym TRANSACTION_QUEUE_SIZE_SPI=2 --defsym __CORTEX_M7=1 --defsym ARM_MATH_CM7=1 --defsym __FPU_PRESENT=1 --defsym USBHOST_OTHER=1 --defsym __MBED_CMSIS_RTOS_CM=1 --defsym __CMSIS_RTOS=1 --defsym USB_STM_HAL=1 --defsym MBED_DEBUG=1 --defsym MBED_TRAP_ERRORS_ENABLED=1 " valueType="string"/>
+								
+								
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.636683319" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.430071705" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="mbed/TARGET_RZ_A1H|mbed/TARGET_NUCLEO_F302R8|mbed/TARGET_MAX32625PICO|mbed/TARGET_K66F|mbed/TARGET_MICRONFCBOARD|mbed/TARGET_DISCO_L476VG|mbed/TARGET_ARM_CM3DS_MPS2|mbed/TARGET_NUCLEO_F439ZI|mbed/TARGET_WIO_3G|mbed/TARGET_MAX32630FTHR|mbed/TARGET_NCS36510|mbed/TARGET_KW24D|mbed/TARGET_UBRIDGE|mbed/TARGET_MTS_DRAGONFLY_F411RE|mbed/TARGET_DISCO_L053C8|mbed/TARGET_LPC11U35_501|mbed/TARGET_LPC1347|mbed/TARGET_DISCO_L475VG_IOT01A|mbed/TARGET_DISCO_F769NI|mbed/TARGET_GR_LYCHEE|mbed/TARGET_EFM32PG12_STK3402|mbed/TARGET_RAPIDIOT_K64F|mbed/TARGET_NUCLEO_L011K4|mbed/TARGET_DISCO_F469NI|mbed/TARGET_EFM32PG_STK3401|mbed/TARGET_MIMXRT1050_EVK|mbed/TARGET_NUCLEO_F303ZE|mbed/TARGET_MAX32625NEXPAQ|mbed/TARGET_ARM_MPS2_M4|mbed/TARGET_LPC1114|mbed/TARGET_ARCH_GPRS|mbed/TARGET_K22F|mbed/TARGET_K20D50M|mbed/TARGET_EFM32LG_STK3600|mbed/TARGET_DISCO_L072CZ_LRWAN1|mbed/TARGET_NUCLEO_F746ZG|mbed/TARGET_NRF51_MICROBIT|mbed/TARGET_KL27Z|mbed/TARGET_NUCLEO_F303RE|mbed/TARGET_MTM_MTCONNECT04S|mbed/TARGET_KL46Z|mbed/TARGET_USENSE|mbed/TARGET_LPC546XX|mbed/TARGET_NUCLEO_L053R8|mbed/TARGET_MTS_MDOT_F411RE|mbed/TARGET_HRM1017|mbed/TARGET_ARM_MPS2_M0P|mbed/TARGET_NRF51822|mbed/TARGET_NUCLEO_L432KC|mbed/TARGET_KW41Z|mbed/TARGET_KL25Z|mbed/TARGET_NUCLEO_L073RZ|mbed/TARGET_NUCLEO_F072RB|mbed/TARGET_NUCLEO_F334R8|mbed/TARGET_DISCO_L496AG|mbed/TARGET_KL82Z|mbed/TARGET_NUCLEO_F103RB|mbed/TARGET_DISCO_F429ZI|mbed/TARGET_DISCO_F303VC|mbed/TARGET_NUCLEO_F303K8|mbed/TARGET_NRF51_DONGLE|mbed/TARGET_EFM32GG_STK3700|mbed/TARGET_DELTA_DFCM_NNN40|mbed/TARGET_HEXIWEAR|mbed/TARGET_LPC11U68|mbed/TARGET_K64F|mbed/TARGET_WIZWIKI_W7500P|mbed/TARGET_LPC11U35_401|.hg|mbed/TARGET_NRF51_MICROBIT_B|mbed/TARGET_SAMD21G18A|mbed/TARGET_KL43Z|mbed/TARGET_ARM_IOTSS_BEID|mbed/TARGET_UBLOX_C027|mbed/TARGET_ARCH_BLE|mbed/TARGET_SDT51822B|mbed/TARGET_LPC4088|mbed/TARGET_NUMAKER_PFM_M453|mbed/TARGET_NUCLEO_L496ZG|mbed/TARGET_B96B_F446VE|mbed/TARGET_ARM_BEETLE_SOC|mbed/TARGET_NUCLEO_F030R8|mbed/TARGET_NUCLEO_F031K6|mbed/TARGET_EFM32WG_STK3800|mbed/TARGET_EFM32ZG_STK3200|mbed/TARGET_NUCLEO_L031K6|mbed/TARGET_NUCLEO_F411RE|mbed/TARGET_TEENSY3_1|mbed/TARGET_LPC54114|mbed/TARGET_NUCLEO_L496ZG_P|mbed/TARGET_VK_RZ_A1H|mbed/TARGET_NUCLEO_F042K6|mbed/TARGET_MTS_MDOT_F405RG|mbed/TARGET_NUCLEO_F207ZG|mbed/TARGET_DISCO_F746NG/TOOLCHAIN_IAR|mbed/TARGET_MOTE_L152RC|mbed/TARGET_NUCLEO_F756ZG|.meta|mbed/TARGET_DISCO_F334C8|mbed/TARGET_DISCO_F407VG|mbed/TARGET_EFM32HG_STK3400|mbed/TARGET_NUCLEO_L433RC_P|mbed/TARGET_TB_SENSE_12|mbed/TARGET_VBLUNO51|mbed/TARGET_K82F|mbed/TARGET_LPC11U37H_401|mbed/TARGET_LPC824|mbed/TARGET_SDT32625B|mbed/TARGET_LPC1769|mbed/TARGET_LPC1768|mbed/.hg_archival.txt|mbed/TARGET_SEEED_TINY_BLE|mbed/TARGET_ARM_MPS2_M3|mbed/TARGET_NUCLEO_F410RB|mbed/TARGET_ARM_MPS2_M0|mbed/TARGET_ARM_MPS2_M7|mbed/TARGET_SAMD21J18A|mbed/TARGET_RBLAB_BLENANO|mbed/TARGET_NUCLEO_F446RE|mbed/TARGET_MAX32625MBED|mbed/TARGET_SDT64B|mbed/TARGET_NUCLEO_F413ZH|mbed/TARGET_MTS_DRAGONFLY_L471QG|mbed/TARGET_DISCO_F413ZH|mbed/TARGET_NUCLEO_F412ZG|mbed/TARGET_SSCI824|mbed/TARGET_DISCO_F746NG/TOOLCHAIN_ARM_STD|mbed/TARGET_TY51822R3|mbed/TARGET_WALLBOT_BLE|mbed/TARGET_SAMR21G18A|mbed/TARGET_ARCH_PRO|mbed/TARGET_SAKURAIO_EVB_01|mbed/TARGET_OC_MBUINO|mbed/TARGET_NUCLEO_F091RC|mbed/TARGET_NRF51_DONGLE_LEGACY|mbed/TARGET_ELMO_F411RE|mbed/TARGET_SDT32620B|mbed/TARGET_TB_SENSE_1|mbed/TARGET_XADOW_M0|mbed/TARGET_LPC11U24|mbed/TARGET_LPC812|mbed/TARGET_KL05Z|mbed/TARGET_FF_LPC546XX|mbed/TARGET_NUCLEO_F446ZE|mbed/TARGET_RBLAB_NRF51822|mbed/TARGET_NUCLEO_F767ZI|mbed/TARGET_EFM32GG11_STK3701|mbed/TARGET_MTB_MTS_DRAGONFLY|mbed/TARGET_NRF51_DK|mbed/TARGET_NUCLEO_F429ZI|mbed/TARGET_NUCLEO_F401RE|mbed/TARGET_NUCLEO_L486RG|mbed/TARGET_STEVAL_3DP001V1|mbed/TARGET_LPC4088_DM|mbed/TARGET_NUCLEO_F070RB|mbed/TARGET_MAX32600MBED|mbed/TARGET_NUCLEO_L152RE|mbed/TARGET_WIZWIKI_W7500|mbed/TARGET_NUCLEO_L4R5ZI|mbed/TARGET_MAX32620FTHR|mbed/TARGET_WIZWIKI_W7500ECO|mbed/TARGET_NUCLEO_L476RG|mbed/TARGET_DISCO_F746NG/TOOLCHAIN_ARM_MICRO|mbed/TARGET_RO359B|mbed/TARGET_LPC1549|mbed/TARGET_ARCH_MAX|mbed/TARGET_LPC4337" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		
+		
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.096142038">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.096142038" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}-release" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.096142038" name="Release" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${ProjName}.bin&quot; &amp;&amp; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot; &amp;&amp; make ldclean" preannouncebuildStep="Creating makefile.defs:" prebuildStep="echo &quot;export PREPROC_CMD = ${openstm32_compiler_path}/${compiler_prefix}cpp -E -P&quot; &gt; ${ProjDirPath}/makefile.defs">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.096142038." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.786926806" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.144633760" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F746NGHx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.081878032" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F746G-DISCO" valueType="string"/>
+							
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.030157801" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv5-sp-d16" valueType="enumerated"/>
+							
+							
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.252783748" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.softfp" valueType="enumerated"/>
+							
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.149481040" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/DISCO-F746NG_blink_led}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.870349429" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.145517408" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.606516852" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.567467236" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								
+								<option id="gnu.c.compiler.option.include.paths.195448434" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									
+									<listOptionValue builtIn="false" value="&quot;../&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;..//usr/src/mbed-sdk&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+									
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.836031149" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									
+									<listOptionValue builtIn="false" value="TARGET_STM32F746xG"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM32F746NG"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_EMAC=1"/>
+									
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_I2CSLAVE=1"/>
+									
+									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_PORTOUT=1"/>
+									
+									<listOptionValue builtIn="false" value="USBHOST_OTHER"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_PORTINOUT=1"/>
+									
+									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_DISCO_F746NG"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM32F7"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_I2C_ASYNCH=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_ASYNCH=1"/>
+									
+									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
+									
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_CAN=1"/>
+									
+									<listOptionValue builtIn="false" value="ARM_MATH_CM7"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_LIKE_CORTEX_M7"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_RTC=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGOUT=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_M7"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SPI_ASYNCH=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_LPTICKER=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_PWMOUT=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_INTERRUPTIN=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_CORTEX"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_I2C=1"/>
+									
+									<listOptionValue builtIn="false" value="TRANSACTION_QUEUE_SIZE_SPI=2"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_STDIO_MESSAGES=1"/>
+									
+									<listOptionValue builtIn="false" value="__CORTEX_M7"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM32F746"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_FAMILY_STM32"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_FF_ARDUINO"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_RELEASE"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_NAME=DISCO_F746NG"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_USTICKER=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_TRNG=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_RTOS_M4_M7"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
+									
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SPI=1"/>
+									
+									<listOptionValue builtIn="false" value="USB_STM_HAL"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SPISLAVE=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGIN=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL=1"/>
+									
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1558017347.8"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_FLASH=1"/>
+									
+									<listOptionValue builtIn="false" value="DEVICE_QSPI=1"/>
+									
+									<listOptionValue builtIn="false" value="TARGET_STM_EMAC"/>
+									
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									
+								</option>
+								
+								<option id="gnu.c.compiler.option.include.files.786124609" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/mbed_config.h"/>
+								</option>
+								
+								
+								
+								<option id="gnu.c.compiler.option.dialect.std.281045642" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.gnu99" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.714612675" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
+								
+								
+								
+								
+								
+																
+								
+								
+								
+								<option id="gnu.c.compiler.option.warnings.extrawarn.795407557" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.345410073" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.972277235" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								<option id="gnu.c.compiler.option.optimization.flags.193051585" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value=" -funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer -fmessage-length=0 -fno-builtin" valueType="string"/>
+								
+								
+								<option id="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other.929693972" name="Other flags" superClass="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="  -Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+								
+								
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.240208934" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.800410258" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.740637680" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.823748892" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.199160709" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								
+								<option id="gnu.cpp.compiler.option.include.paths.559807922" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									
+									<listOptionValue builtIn="false" value="&quot;../&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;..//usr/src/mbed-sdk&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+									
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.091993005" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								
+									<listOptionValue builtIn="false" value="TARGET_STM32F746xG"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM32F746NG"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_EMAC=1"/>
+								
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_I2CSLAVE=1"/>
+								
+									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_PORTOUT=1"/>
+								
+									<listOptionValue builtIn="false" value="USBHOST_OTHER"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_PORTINOUT=1"/>
+								
+									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_DISCO_F746NG"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM32F7"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_I2C_ASYNCH=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_ASYNCH=1"/>
+								
+									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
+								
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_CAN=1"/>
+								
+									<listOptionValue builtIn="false" value="ARM_MATH_CM7"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_LIKE_CORTEX_M7"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_RTC=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGOUT=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_M7"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SPI_ASYNCH=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_LPTICKER=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_PWMOUT=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_INTERRUPTIN=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_CORTEX"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_I2C=1"/>
+								
+									<listOptionValue builtIn="false" value="TRANSACTION_QUEUE_SIZE_SPI=2"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_STDIO_MESSAGES=1"/>
+								
+									<listOptionValue builtIn="false" value="__CORTEX_M7"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM32F746"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_FAMILY_STM32"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_FF_ARDUINO"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_RELEASE"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_NAME=DISCO_F746NG"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_USTICKER=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_TRNG=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_RTOS_M4_M7"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
+								
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SPI=1"/>
+								
+									<listOptionValue builtIn="false" value="USB_STM_HAL"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SPISLAVE=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGIN=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL=1"/>
+								
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1558017347.8"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_FLASH=1"/>
+								
+									<listOptionValue builtIn="false" value="DEVICE_QSPI=1"/>
+								
+									<listOptionValue builtIn="false" value="TARGET_STM_EMAC"/>
+								
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+								
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+								
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+								
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+								
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								
+								</option>
+								
+								<option id="gnu.cpp.compiler.option.include.files.896830120" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/mbed_config.h"/>
+								</option>
+								
+								
+								
+								<option id="gnu.cpp.compiler.option.dialect.std.018626878" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.gnu99" valueType="enumerated"/>
+								
+								
+								
+								
+								
+								
+								
+								
+								<option id="gnu.cpp.compiler.option.warnings.allwarn.729199319" superClass="gnu.cpp.compiler.option.warnings.allwarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.691588125" superClass="gnu.cpp.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+															
+								
+								
+								
+								
+								
+								
+								
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.fdata.311653000" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.306069550" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								
+								
+								<option id="gnu.cpp.compiler.option.optimization.flags.591824415" superClass="gnu.cpp.compiler.option.optimization.flags" useByScannerDiscovery="false" value=" -funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer -fmessage-length=0 -fno-builtin" valueType="string"/>
+								
+								
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.579095825" name="Other flags" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" useByScannerDiscovery="false" value=" -Wvla -Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+								
+								
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.461014760" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.149545921" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.089654194" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script.687389741" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script" value="${ProjDirPath}/Release/linker-script-release.ld" valueType="string"/>
+								
+								<option id="gnu.cpp.link.option.flags.390384510" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-Wl,--wrap=main -Wl,--wrap=_malloc_r -Wl,--wrap=_free_r -Wl,--wrap=_realloc_r -Wl,--wrap=_memalign_r -Wl,--wrap=_calloc_r -Wl,--wrap=exit -Wl,--wrap=atexit -DNDEBUG -Wl,-n -Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group" valueType="string"/>
+								
+								<option id="gnu.cpp.link.option.userobjs.364308084" name="Other objects" superClass="gnu.cpp.link.option.userobjs" valueType="userObjs">
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/PeripheralPins.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/analogin_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/analogin_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/analogout_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/analogout_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/can_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/flash_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/gpio_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/gpio_irq_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/gpio_irq_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/hal_tick_overrides.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/i2c_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/lp_ticker.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_board.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_crc_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_overrides.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_retarget.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/mbed_tz_context.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/pinmap.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/port_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/pwmout_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/pwmout_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/qspi_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/rtc_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/serial_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/serial_device.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/sleep.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/spi_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/startup_stm32f746xx.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_adc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_adc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_can.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_can_legacy.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_cec.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_cortex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_crc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_crc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_cryp.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_cryp_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dac.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dac_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dcmi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dcmi_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dfsdm.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dma.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dma2d.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dma_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_dsi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_eth.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_flash.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_flash_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_gpio.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_hash.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_hash_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_hcd.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_i2c.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_i2c_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_i2s.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_irda.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_iwdg.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_jpeg.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_lptim.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_ltdc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_ltdc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_mdios.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_mmc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_nand.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_nor.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_pcd.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_pcd_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_pwr.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_pwr_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_qspi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rcc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rcc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rng.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rtc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_rtc_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sai.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sai_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sd.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sdram.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_smartcard.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_smartcard_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_smbus.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_spdifrx.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_spi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_spi_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_sram.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_tim.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_tim_ex.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_uart.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_usart.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_hal_wwdg.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_adc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_crc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_dac.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_dma.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_dma2d.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_exti.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_fmc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_gpio.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_i2c.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_lptim.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_pwr.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_rcc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_rng.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_rtc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_sdmmc.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_spi.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_tim.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_usart.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_usb.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm32f7xx_ll_utils.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/stm_spi_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/system_clock.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/system_stm32f7xx.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/trng_api.o}&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/us_ticker.o}&quot;"/>
+									
+								</option>
+								<option id="gnu.cpp.link.option.libs.248265261" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									
+									<listOptionValue builtIn="false" value="mbed"/>
+									
+								</option>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.805072490" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<option id="gnu.cpp.link.option.paths.260732372" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM}&quot;"/>
+									
+								</option>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.095052449" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.240073873" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.021077584" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									
+									<listOptionValue builtIn="false" value="&quot;../&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;..//usr/src/mbed-sdk&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+									
+								</option>
+								
+								<option id="gnu.both.asm.option.flags.603995401" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value=" --defsym TRANSACTION_QUEUE_SIZE_SPI=2 --defsym __CORTEX_M7=1 --defsym ARM_MATH_CM7=1 --defsym __FPU_PRESENT=1 --defsym USBHOST_OTHER=1 --defsym __MBED_CMSIS_RTOS_CM=1 --defsym __CMSIS_RTOS=1 --defsym USB_STM_HAL=1 --defsym MBED_DEBUG=1 --defsym MBED_TRAP_ERRORS_ENABLED=1 --defsym NDEBUG=1 " valueType="string"/>
+								
+								
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.659051010" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.930005824" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="mbed/TARGET_RZ_A1H|mbed/TARGET_NUCLEO_F302R8|mbed/TARGET_MAX32625PICO|mbed/TARGET_K66F|mbed/TARGET_MICRONFCBOARD|mbed/TARGET_DISCO_L476VG|mbed/TARGET_ARM_CM3DS_MPS2|mbed/TARGET_NUCLEO_F439ZI|mbed/TARGET_WIO_3G|mbed/TARGET_MAX32630FTHR|mbed/TARGET_NCS36510|mbed/TARGET_KW24D|mbed/TARGET_UBRIDGE|mbed/TARGET_MTS_DRAGONFLY_F411RE|mbed/TARGET_DISCO_L053C8|mbed/TARGET_LPC11U35_501|mbed/TARGET_LPC1347|mbed/TARGET_DISCO_L475VG_IOT01A|mbed/TARGET_DISCO_F769NI|mbed/TARGET_GR_LYCHEE|mbed/TARGET_EFM32PG12_STK3402|mbed/TARGET_RAPIDIOT_K64F|mbed/TARGET_NUCLEO_L011K4|mbed/TARGET_DISCO_F469NI|mbed/TARGET_EFM32PG_STK3401|mbed/TARGET_MIMXRT1050_EVK|mbed/TARGET_NUCLEO_F303ZE|mbed/TARGET_MAX32625NEXPAQ|mbed/TARGET_ARM_MPS2_M4|mbed/TARGET_LPC1114|mbed/TARGET_ARCH_GPRS|mbed/TARGET_K22F|mbed/TARGET_K20D50M|mbed/TARGET_EFM32LG_STK3600|mbed/TARGET_DISCO_L072CZ_LRWAN1|mbed/TARGET_NUCLEO_F746ZG|mbed/TARGET_NRF51_MICROBIT|mbed/TARGET_KL27Z|mbed/TARGET_NUCLEO_F303RE|mbed/TARGET_MTM_MTCONNECT04S|mbed/TARGET_KL46Z|mbed/TARGET_USENSE|mbed/TARGET_LPC546XX|mbed/TARGET_NUCLEO_L053R8|mbed/TARGET_MTS_MDOT_F411RE|mbed/TARGET_HRM1017|mbed/TARGET_ARM_MPS2_M0P|mbed/TARGET_NRF51822|mbed/TARGET_NUCLEO_L432KC|mbed/TARGET_KW41Z|mbed/TARGET_KL25Z|mbed/TARGET_NUCLEO_L073RZ|mbed/TARGET_NUCLEO_F072RB|mbed/TARGET_NUCLEO_F334R8|mbed/TARGET_DISCO_L496AG|mbed/TARGET_KL82Z|mbed/TARGET_NUCLEO_F103RB|mbed/TARGET_DISCO_F429ZI|mbed/TARGET_DISCO_F303VC|mbed/TARGET_NUCLEO_F303K8|mbed/TARGET_NRF51_DONGLE|mbed/TARGET_EFM32GG_STK3700|mbed/TARGET_DELTA_DFCM_NNN40|mbed/TARGET_HEXIWEAR|mbed/TARGET_LPC11U68|mbed/TARGET_K64F|mbed/TARGET_WIZWIKI_W7500P|mbed/TARGET_LPC11U35_401|.hg|mbed/TARGET_NRF51_MICROBIT_B|mbed/TARGET_SAMD21G18A|mbed/TARGET_KL43Z|mbed/TARGET_ARM_IOTSS_BEID|mbed/TARGET_UBLOX_C027|mbed/TARGET_ARCH_BLE|mbed/TARGET_SDT51822B|mbed/TARGET_LPC4088|mbed/TARGET_NUMAKER_PFM_M453|mbed/TARGET_NUCLEO_L496ZG|mbed/TARGET_B96B_F446VE|mbed/TARGET_ARM_BEETLE_SOC|mbed/TARGET_NUCLEO_F030R8|mbed/TARGET_NUCLEO_F031K6|mbed/TARGET_EFM32WG_STK3800|mbed/TARGET_EFM32ZG_STK3200|mbed/TARGET_NUCLEO_L031K6|mbed/TARGET_NUCLEO_F411RE|mbed/TARGET_TEENSY3_1|mbed/TARGET_LPC54114|mbed/TARGET_NUCLEO_L496ZG_P|mbed/TARGET_VK_RZ_A1H|mbed/TARGET_NUCLEO_F042K6|mbed/TARGET_MTS_MDOT_F405RG|mbed/TARGET_NUCLEO_F207ZG|mbed/TARGET_DISCO_F746NG/TOOLCHAIN_IAR|mbed/TARGET_MOTE_L152RC|mbed/TARGET_NUCLEO_F756ZG|.meta|mbed/TARGET_DISCO_F334C8|mbed/TARGET_DISCO_F407VG|mbed/TARGET_EFM32HG_STK3400|mbed/TARGET_NUCLEO_L433RC_P|mbed/TARGET_TB_SENSE_12|mbed/TARGET_VBLUNO51|mbed/TARGET_K82F|mbed/TARGET_LPC11U37H_401|mbed/TARGET_LPC824|mbed/TARGET_SDT32625B|mbed/TARGET_LPC1769|mbed/TARGET_LPC1768|mbed/.hg_archival.txt|mbed/TARGET_SEEED_TINY_BLE|mbed/TARGET_ARM_MPS2_M3|mbed/TARGET_NUCLEO_F410RB|mbed/TARGET_ARM_MPS2_M0|mbed/TARGET_ARM_MPS2_M7|mbed/TARGET_SAMD21J18A|mbed/TARGET_RBLAB_BLENANO|mbed/TARGET_NUCLEO_F446RE|mbed/TARGET_MAX32625MBED|mbed/TARGET_SDT64B|mbed/TARGET_NUCLEO_F413ZH|mbed/TARGET_MTS_DRAGONFLY_L471QG|mbed/TARGET_DISCO_F413ZH|mbed/TARGET_NUCLEO_F412ZG|mbed/TARGET_SSCI824|mbed/TARGET_DISCO_F746NG/TOOLCHAIN_ARM_STD|mbed/TARGET_TY51822R3|mbed/TARGET_WALLBOT_BLE|mbed/TARGET_SAMR21G18A|mbed/TARGET_ARCH_PRO|mbed/TARGET_SAKURAIO_EVB_01|mbed/TARGET_OC_MBUINO|mbed/TARGET_NUCLEO_F091RC|mbed/TARGET_NRF51_DONGLE_LEGACY|mbed/TARGET_ELMO_F411RE|mbed/TARGET_SDT32620B|mbed/TARGET_TB_SENSE_1|mbed/TARGET_XADOW_M0|mbed/TARGET_LPC11U24|mbed/TARGET_LPC812|mbed/TARGET_KL05Z|mbed/TARGET_FF_LPC546XX|mbed/TARGET_NUCLEO_F446ZE|mbed/TARGET_RBLAB_NRF51822|mbed/TARGET_NUCLEO_F767ZI|mbed/TARGET_EFM32GG11_STK3701|mbed/TARGET_MTB_MTS_DRAGONFLY|mbed/TARGET_NRF51_DK|mbed/TARGET_NUCLEO_F429ZI|mbed/TARGET_NUCLEO_F401RE|mbed/TARGET_NUCLEO_L486RG|mbed/TARGET_STEVAL_3DP001V1|mbed/TARGET_LPC4088_DM|mbed/TARGET_NUCLEO_F070RB|mbed/TARGET_MAX32600MBED|mbed/TARGET_NUCLEO_L152RE|mbed/TARGET_WIZWIKI_W7500|mbed/TARGET_NUCLEO_L4R5ZI|mbed/TARGET_MAX32620FTHR|mbed/TARGET_WIZWIKI_W7500ECO|mbed/TARGET_NUCLEO_L476RG|mbed/TARGET_DISCO_F746NG/TOOLCHAIN_ARM_MICRO|mbed/TARGET_RO359B|mbed/TARGET_LPC1549|mbed/TARGET_ARCH_MAX|mbed/TARGET_LPC4337" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="DISCO-F746NG_blink_led.fr.ac6.managedbuild.target.gnu.cross.exe.010899270" name="Executable" projectType="fr.ac6.managedbuild.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		
+			
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.239752060;fr.ac6.managedbuild.config.gnu.cross.exe.debug.239752060.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.900156448;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.217692574">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.239752060;fr.ac6.managedbuild.config.gnu.cross.exe.debug.239752060.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.954859193;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.738645828">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		
+			
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.096142038;fr.ac6.managedbuild.config.gnu.cross.exe.release.096142038.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.145517408;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.240208934">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.096142038;fr.ac6.managedbuild.config.gnu.cross.exe.release.096142038.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.740637680;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.461014760">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>
